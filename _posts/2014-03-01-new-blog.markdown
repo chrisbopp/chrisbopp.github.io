@@ -1,12 +1,7 @@
 ---
 layout: post
 title: New Blog
-date: {}
-categories: jekyll meta blog
-published: true
-tags: 
-  - jekyll
-  - blog
+tags : [jekyll, blog]
 ---
 
 I'm working on deploying my new blog using Jekyll. Check out the [docs][jekyll] for more info on how to get the most out of it.
