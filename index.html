@@ -1,39 +1,25 @@
 ---
 layout: default
-title: Home | Chris Bopp
+title: About | Chris Bopp
 ---
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<div class="blog-post">
-  <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="blog-post-meta"><em>{{ post.date | date_to_string }}</em></p>
-  {{ post.content }}
-</div>
-{% endfor %}
+<h1>Understand Me</h1>
 
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-	<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-	<span>&laquo; Prev</span>
-  {% endif %}
+<p class="lead">I use technology and data for social good.</p>
 
-  {% for page in (1..paginator.total_pages) %}
-	{% if page == paginator.page %}
-	  <em>{{ page }}</em>
-	{% elsif page == 1 %}
-	  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-	{% else %}
-	  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-	{% endif %}
-  {% endfor %}
+<p>I love technology but hate injustice. I study ways that technology can help solve the world's most pressing problems at the <a href="http://www.colorado.edu">University of Colorado</a>'s <a href="http://atlas.colorado.edu">ATLAS Institute</a>. I've also recently become involved in research at <a href="http://epic.cs.colorado.edu">Project EPIC</a>.</p>
 
-  {% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-	<span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
+<p>Across all <a href="/research">my work</a>, I try to find ways to better understand people in order to help facilitate a more fair and just world.</p>
+
+<p>I live in the beautiful state of Colorado with my amazing wife and incredibly drooly cat. I love finding efficient ways to address inefficiencies. I love spending the day with a cup of coffee learning about anything and everything. Sometimes I think I should go outside more.</p>
+
+<h1>Talk to Me</h1>
+<dl class="dl-horizontal">
+  <dt>Email</dt>
+  <dd><a href="mailto:chris.bopp@gmail.com">chris.bopp@gmail.com</a></dd>
+  <dt>LinkedIn</dt>
+  <dd><a href="http://linkedin.com/in/cbopp/">linkedin.com/in/cbopp</a></dd>
+  <dt>Twitter</dt>
+  <dd><a href="https://twitter.com/chrisbopp">twitter.com/chrisbopp</a></dd>
+  <dt>Flickr</dt>
+  <dd><a href="https://www.flickr.com/photos/chrisbopp/">flickr.com/chrisbopp</a></dd>
+</dl>
