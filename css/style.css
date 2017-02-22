@@ -103,6 +103,14 @@ img {
 .list-icons li {
 	padding: 0 0 15px 0;
 }
+.list-papers {
+	padding: 0;
+	margin: 20px 0;
+	list-style: none;
+}
+.list-papers li {
+	padding: 0 0 20px 0;
+}
 blockquote {
 	border-left: none;
 	padding-left: 0;
@@ -590,7 +598,7 @@ textarea {
 	font-size: 36px;
 }
 .social-links li a {
-	color: #333333;
+	color: #ffffff;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
